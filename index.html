@@ -105,24 +105,21 @@ overlay.addEventListener('click', e => {
   console.log(`{ name: "NAME", x: ${Math.round(p.x)}, y: ${Math.round(p.y)}, type: "triangle" },`);
 });
 
-  const overlay = document.getElementById('overlay');
-
-overlay.addEventListener('click', (e) => {
-  const rect = overlay.getBoundingClientRect();
-
-  const x = Math.round(
-    ((e.clientX - rect.left) / rect.width) * 1914
-  );
-
-  const y = Math.round(
-    ((e.clientY - rect.top) / rect.height) * 1419
-  );
-
-  console.log(`x: ${x}, y: ${y}`);
-});
+  
 
 updateScore();
 nextQuestion();
+
+  document.addEventListener('click', (e) => {
+  const stage = document.getElementById('stage');
+  const rect = stage.getBoundingClientRect();
+
+  const x = Math.round(((e.clientX - rect.left) / rect.width) * 1914);
+  const y = Math.round(((e.clientY - rect.top) / rect.height) * 1419);
+
+  console.log(`x: ${x}, y: ${y}`);
+});
+  
 </script>
 </body>
 </html>
