@@ -63,14 +63,13 @@
     </svg>
     <div id="panel">
       <input id="answer" autocomplete="off" placeholder="Type fix name" />
-      <button id="skip">Skip</button>
+      <button id="skip">idk</button>
       <div id="score">0 / 0</div>
     </div>
   </div>
 </div>
 <script>
-// Replace these samples with your real fixes. x/y are image coordinates on the 1914 x 1419 background.
-// Tip: set EDIT_MODE = true, open the page, click a fix, then copy the x/y shown in the browser console.
+
 const EDIT_MODE = false;
 const fixes = [
   { name: "HNK", x: 119, y: 619 },
@@ -82,7 +81,69 @@ const fixes = [
   { name: "MAD", x: 1574, y: 1151, },
   { name: "HVN", x: 1459, y: 1187, },
   { name: "BDR", x: 1340, y: 1270, },
-  { name: "CMK", x: 1108, y: 1190, },
+  { name: "CMK", x: 1080, y: 1190, },
+  { name: "LAAYK", x: 29, y: 1050, },
+  { name: "HAWLY", x: 247, y: 1007, },
+  { name: "RAGER", x: 346, y: 978, },
+  { name: "BRISS", x: 1388, y: 876, },
+  { name: "JUDDS", x: 1339, y: 929, },
+  { name: "ZATMI", x: 1315, y: 989, },
+  { name: "SOARS", x: 1247, y: 1007, },
+  { name: "GREKI", x: 1225, y: 1036, },
+  { name: "HAARP", x: 1072, y: 1310, },
+  { name: "SAX", x: 550, y: 1353, },
+  { name: "COATE", x: 460, y: 1293, },
+  { name: "SHAFF", x: 591, y: 1216, },
+  { name: "LEMOR", x: 497, y: 1179, },
+  { name: "HUO", x: 523, y: 1099, },
+  { name: "CRANK", x: 628, y: 1087, },
+  { name: "GAYEL", x: 650, y: 1097, },
+  { name: "FLOSI", x: 660, y: 1001, },
+  { name: "MSLIN", x: 542, y: 1034, },
+  { name: "HELON", x: 691, y: 907, },
+  { name: "CAMMO", x: 542, y: 940, },
+  { name: "WEARD", x: 556, y: 837, },
+  { name: "KERRI", x: 442, y: 778, },
+  { name: "FILPS", x: 626, y: 711, },
+  { name: "FITRE", x: 339, y: 727, },
+  { name: "PRNCE", x: 585, y: 684, },
+  { name: "RIMBA", x: 487, y: 627, },
+  { name: "SAGES", x: 667, y: 631, },
+  { name: "TALCO", x: 781, y: 616, },
+  { name: "CYPER", x: 691, y: 582, },
+  { name: "WEETS", x: 736, y: 766, },
+  { name: "AGNEZ", x: 740, y: 494, },
+  { name: "ACOVE", x: 822, y: 490, },
+  { name: "ATHOS", x: 941, y: 486, },
+  { name: "HIDAL", x: 1117, y: 467, },
+  { name: "CANAN", x: 1141, y: 304, },
+  { name: "CIRRU", x: 1006, y: 302, },
+  { name: "BOWAN", x: 1100, y: 580, },
+  { name: "WIGAN", x: 943, y: 598, },
+  { name: "MOBBS", x: 1254, y: 563, },
+  { name: "SASHA", x: 1305, y: 558, },
+  { name: "VEERS", x: 1236, y: 731, },
+  { name: "MOLDS", x: 1357, y: 504, },
+  { name: "CTR", x: 1418, y: 452, },
+  { name: "RITAS", x: 1389, y: 417, },
+  { name: "TOMES", x: 1403, y: 544, },
+  { name: "BAF", x: 1544, y: 538, },
+  { name: "CEF", x: 1654, y: 504, },
+  { name: "COBOL", x: 1452, y: 593, },
+  { name: "GELAW", x: 1022, y: 705, },
+  { name: "STUBY", x: 1153, y: 731, },
+  { name: "TRESA", x: 947, y: 754, },
+  { name: "YODAA", x: 823, y: 868, },
+  { name: "IGN", x: 947, y: 910, },
+  { name: "VALRE", x: 915, y: 1077, },
+  { name: "BASYE", x: 964, y: 1148, },
+  { name: "NOBBI", x: 1048, y: 1083, },
+  { name: "MOONI", x: 1221, y: 926, },
+  { name: "LOVES", x: 1127, y: 1001, },
+  { name: "PWL", x: 1068, y: 825, },
+  { name: "CASSH", x: 1009, y: 962, },
+  { name: "DEEDE", x: 1104, y: 920, },
+  
   
 ];
 
